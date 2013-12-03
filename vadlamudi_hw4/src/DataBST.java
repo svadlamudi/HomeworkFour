@@ -22,12 +22,12 @@ public class DataBST implements IBST{
 		/*if(this.attraction.getName().compareTo(attraction.getName()) == 0){
 			return this;
 		}*/ //Question stated no need to include this check for duplicates
-		if(this.attraction.getName().compareTo(attraction.getName()) < 0){
+		if(attraction.getName().compareTo(this.attraction.getName()) < 0){
 			return new DataBST(this.attraction,
 							   this.left.addElt(attraction),
 							   this.right);
 		}			
-		else{ //if(this.attraction.getName().compareTo(attraction.getName()) > 0
+		else{ //if(attraction.getName().compareTo(this.attraction.getName()) > 0
 			return new DataBST(this.attraction,
 					   this.left,
 					   this.right.addElt(attraction));
@@ -44,8 +44,8 @@ public class DataBST implements IBST{
 	//Returns true if all elements in the tree match the given criteria
 	public boolean allAre(ISelect criteria){
 		return this.attraction.accept(criteria) &&
-			   this.left.containsAny(criteria)  &&
-			   this.right.containsAny(criteria);
+			   this.left.allAre(criteria)  &&
+			   this.right.allAre(criteria);
 	}
 	
 	//Returns a list with all the elements in the tree that match the given criteria

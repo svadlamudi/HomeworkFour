@@ -20,7 +20,7 @@ public class MtBST implements IBST{
 	
 	//Returns true if all the elements in the tree match the given criteria
 	public boolean allAre(ISelect criteria){
-		return false;
+		return true;
 	}
 	
 	//Returns a list with all the elements in the tree that match the given criteria

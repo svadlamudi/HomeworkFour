@@ -3,21 +3,25 @@
 
 public class LocatedAbove implements ISelect {
 
+	int aboveStreet;
+	
 	//LocatedAbove Constructor
-	public LocatedAbove(){}
+	public LocatedAbove(int aboveStreet){
+		this.aboveStreet = aboveStreet;
+	}
 	
 	//Returns true if the given hotel is located above 65 street
 	public boolean choose(Hotel hotel) {
-		return hotel.location.street > 65;
+		return hotel.location.street > this.aboveStreet;
 	}
 
 	//Returns true if the given museum is located above 65 street
 	public boolean choose(Museum museum) {
-		return museum.location.street > 65;
+		return museum.location.street > this.aboveStreet;
 	}
 
 	//Returns true if the given restaurant is located above 65 street
 	public boolean choose(Restaurant restaurant) {
-		return restaurant.location.street > 65;
+		return restaurant.location.street > this.aboveStreet;
 	}
 }
