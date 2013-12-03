@@ -1,7 +1,7 @@
 // Name: Sai Kiran Vadlamudi		Username: svadlamudi		Section: B01
 // Name: Marilda Bozdo				Username: mbozdo			Section: B06
 
-public class Hotel extends AbsRated implements IVisitable{
+public class Hotel extends AbsRated{
 	
 	//Hotel Object Constructor
 	public Hotel(String name, Location location, int rating){

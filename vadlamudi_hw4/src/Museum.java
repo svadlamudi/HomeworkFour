@@ -1,7 +1,7 @@
 // Name: Sai Kiran Vadlamudi		Username: svadlamudi		Section: B01
 // Name: Marilda Bozdo				Username: mbozdo			Section: B06
 
-public class Museum extends AbsAttraction implements IVisitable{
+public class Museum extends AbsAttraction{
 	
 	//Museum Fields
 	int fee;

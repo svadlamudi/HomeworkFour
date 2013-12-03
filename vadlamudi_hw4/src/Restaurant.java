@@ -1,7 +1,7 @@
 // Name: Sai Kiran Vadlamudi		Username: svadlamudi		Section: B01
 // Name: Marilda Bozdo				Username: mbozdo			Section: B06
 
-public class Restaurant extends AbsRated implements IVisitable{
+public class Restaurant extends AbsRated{
 	
 	//Restaurant Constructor
 	public Restaurant(String name, Location location, int rating){
